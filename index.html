@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Flag Project</title>
+  <style>
+    * {
+      margin: 0px;
+      padding: 0px;
+
+    }
+
+    body {
+      margin-left: 25%;
+      margin-top: 5px;
+    }
+
+    .red {
+      height: 900px;
+      width: 1200px;
+      background-color: red;
+      position: relative;
+    }
+
+    .triangle {
+      height: 190px;
+      width: 180px;
+      background-color: white;
+      position: absolute;
+      top: 350px;
+      left: 640px;
+      clip-path: polygon(50% 0%, 61.8% 38.2%, 100% 38.2%, 69.1% 61.8%, 80.9% 100%, 50% 76.4%, 19.1% 100%, 30.9% 61.8%, 0% 38.2%, 38.2% 38.2%);
+      transform: rotate(50deg);
+      z-index: 5;
+    }
+
+    .big-circle {
+      height: 400px;
+      width: 400px;
+      border-radius: 50%;
+      background-color: white;
+      position: absolute;
+      top: 250px;
+      left: 270px;
+      z-index: 2;
+    }
+
+    .small-circle {
+      height: 320px;
+      width: 320px;
+      border-radius: 50%;
+      background-color: red;
+      position: absolute;
+      top: 290px;
+      left: 360px;
+      z-index: 2;
+    }
+
+    p {
+      color: white;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      text-align: right;
+      padding: 20px 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="red">
+    <p>Turkey Flag</p>
+    <div class="big-circle"></div>
+    <div class="small-circle"></div>
+    <div class="triangle"></div>
+  </div>
+
+</body>
+
+</html>
